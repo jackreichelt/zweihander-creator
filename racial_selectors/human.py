@@ -18,5 +18,3 @@ def human_trait():
   ]
   
   return weighted_choice(trait_weights)
-  
-  
