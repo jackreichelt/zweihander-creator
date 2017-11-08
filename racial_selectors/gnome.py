@@ -1,7 +1,10 @@
-from random import choice
+'''Racial generators for gnomes'''
+
+# from random import choice
 from custom_random import weighted_choice
 
 def gnome_trait():
+  'Returns a randomly selected trait'
   trait_weights = [
     ('Clockworks of War', 8),
     ('Crag Fighting', 16-8),
@@ -16,5 +19,5 @@ def gnome_trait():
     ('Underfoot', 92-85),
     ('Wretched Prankster', 100-92),
   ]
-  
+
   return weighted_choice(trait_weights)

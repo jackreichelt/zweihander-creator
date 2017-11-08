@@ -1,7 +1,10 @@
-from random import choice
+'''Racial generators for dwarves'''
+
+# from random import choice
 from custom_random import weighted_choice
 
 def dwarf_trait():
+  'Returns a randomly selected trait'
   trait_weights = [
     ('Cavesight', 8),
     ('Children of the Earth', 16-8),
@@ -16,5 +19,5 @@ def dwarf_trait():
     ('Stoneheaded', 92-85),
     ('Strength of the Mountain', 100-92),
   ]
-  
+
   return weighted_choice(trait_weights)

@@ -1,7 +1,10 @@
+'''Racial generators for humans'''
+
 from random import choice
 from custom_random import weighted_choice
 
 def human_trait():
+  'Returns a randomly selected trait'
   trait_weights = [
     ('Blessing in Disguise', 8),
     ('Danger Sense', 16-8),
@@ -16,5 +19,5 @@ def human_trait():
     ('Noble Savage', 92-85),
     ('Seventh Sense', 100-92),
   ]
-  
+
   return weighted_choice(trait_weights)
